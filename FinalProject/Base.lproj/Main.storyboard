@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kp6-Tq-hz7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kp6-Tq-hz7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -121,8 +120,8 @@
                     <view key="view" contentMode="scaleToFill" id="1rR-aW-3QS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="R1z-MA-ZVD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="3dm-Pi-vsm"/>
                 </viewController>
@@ -137,8 +136,32 @@
                     <view key="view" contentMode="scaleToFill" id="2vJ-D6-XpK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="JF2-Jn-T5y"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GHe-Xj-0c8">
+                                <rect key="frame" x="87" y="237" width="240" height="128"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="lPm-pG-7ny"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="hvz-5j-a14"/>
+                            </scrollView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zs5-3J-APR">
+                                <rect key="frame" x="99" y="411" width="110" height="200"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDL-2f-AWH">
+                                <rect key="frame" x="285" y="142" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zs5-3J-APR" firstAttribute="width" secondItem="2vJ-D6-XpK" secondAttribute="width" multiplier="0.2657" id="1Fr-fg-G0D"/>
+                            <constraint firstItem="JF2-Jn-T5y" firstAttribute="bottom" secondItem="GHe-Xj-0c8" secondAttribute="bottom" id="3zx-kw-Znb"/>
+                            <constraint firstItem="GHe-Xj-0c8" firstAttribute="top" secondItem="JF2-Jn-T5y" secondAttribute="top" id="Iko-Jx-lsy"/>
+                            <constraint firstItem="JF2-Jn-T5y" firstAttribute="trailing" secondItem="GHe-Xj-0c8" secondAttribute="trailing" id="cV6-Mt-gyA"/>
+                            <constraint firstItem="GHe-Xj-0c8" firstAttribute="leading" secondItem="JF2-Jn-T5y" secondAttribute="leading" id="e1f-HF-XCO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JF2-Jn-T5y"/>
                     </view>
                     <navigationItem key="navigationItem" title="First page" id="FzQ-cr-Bi1"/>
                 </viewController>
@@ -153,8 +176,8 @@
                     <view key="view" contentMode="scaleToFill" id="bZN-bm-dj2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="RD1-bN-89v"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Second Page" id="UId-I3-hcU"/>
                 </viewController>
@@ -169,8 +192,8 @@
                     <view key="view" contentMode="scaleToFill" id="GhS-je-qzC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="aoU-HJ-9eN"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Third Page" id="Ggc-E9-B9G"/>
                 </viewController>
@@ -185,8 +208,8 @@
                     <view key="view" contentMode="scaleToFill" id="Qha-l3-6jK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="8uP-UK-V3k"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Fourth Page" id="h8F-pO-4Y2"/>
                 </viewController>
@@ -195,18 +218,4 @@
             <point key="canvasLocation" x="-271" y="1168"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

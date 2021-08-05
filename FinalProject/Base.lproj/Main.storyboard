@@ -121,14 +121,31 @@
                     <view key="view" contentMode="scaleToFill" id="1rR-aW-3QS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image 8-5-21 at 1.27 AM" translatesAutoresizingMaskIntoConstraints="NO" id="chW-SM-lFk">
+                                <rect key="frame" x="-83" y="77" width="588" height="754"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saving the planet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPK-By-3aM">
+                                <rect key="frame" x="133" y="557" width="156" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="zid-nB-qFv">
+                                <rect key="frame" x="55" y="248" width="305" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="R1z-MA-ZVD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="3dm-Pi-vsm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AbY-cB-4lk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2991" y="1168"/>
+            <point key="canvasLocation" x="-2991.304347826087" y="1167.8571428571429"/>
         </scene>
         <!--First page-->
         <scene sceneID="yeR-XS-YBt">
@@ -138,30 +155,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GHe-Xj-0c8">
-                                <rect key="frame" x="87" y="237" width="240" height="128"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="lPm-pG-7ny"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="hvz-5j-a14"/>
-                            </scrollView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zs5-3J-APR">
                                 <rect key="frame" x="99" y="411" width="110" height="200"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDL-2f-AWH">
-                                <rect key="frame" x="285" y="142" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JF2-Jn-T5y"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zs5-3J-APR" firstAttribute="width" secondItem="2vJ-D6-XpK" secondAttribute="width" multiplier="0.2657" id="1Fr-fg-G0D"/>
-                            <constraint firstItem="JF2-Jn-T5y" firstAttribute="bottom" secondItem="GHe-Xj-0c8" secondAttribute="bottom" id="3zx-kw-Znb"/>
-                            <constraint firstItem="GHe-Xj-0c8" firstAttribute="top" secondItem="JF2-Jn-T5y" secondAttribute="top" id="Iko-Jx-lsy"/>
-                            <constraint firstItem="JF2-Jn-T5y" firstAttribute="trailing" secondItem="GHe-Xj-0c8" secondAttribute="trailing" id="cV6-Mt-gyA"/>
-                            <constraint firstItem="GHe-Xj-0c8" firstAttribute="leading" secondItem="JF2-Jn-T5y" secondAttribute="leading" id="e1f-HF-XCO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="First page" id="FzQ-cr-Bi1"/>
@@ -220,10 +221,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image 8-5-21 at 1.27 AM" width="244" height="334.5"/>
+        <image name="Logo-1" width="448" height="399"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

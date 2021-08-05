@@ -33,7 +33,7 @@
         <scene sceneID="CIn-9o-81u">
             <objects>
                 <navigationController id="0OH-J3-SNn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Recycling" image="trash.fill" catalog="system" id="MjJ-dz-JzQ"/>
+                    <tabBarItem key="tabBarItem" title="Recycling" image="trash.slash.fill" catalog="system" id="MjJ-dz-JzQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lKL-Wu-SWb">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -67,7 +67,7 @@
         <scene sceneID="aL9-89-eRm">
             <objects>
                 <navigationController id="r6z-o6-lHM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Food Waste" id="tld-tb-u5q"/>
+                    <tabBarItem key="tabBarItem" title="Food Waste" image="leaf.fill" catalog="system" id="tld-tb-u5q"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="04Q-j5-5Mq">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -84,7 +84,7 @@
         <scene sceneID="FT5-KZ-BYC">
             <objects>
                 <navigationController id="hna-5E-3wk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Fast Fashion" id="SOT-Zy-3aV"/>
+                    <tabBarItem key="tabBarItem" title="Fast Fashion" image="camera.fill" catalog="system" id="SOT-Zy-3aV"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yPS-VU-CMN">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -122,19 +122,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image 8-5-21 at 1.27 AM" translatesAutoresizingMaskIntoConstraints="NO" id="chW-SM-lFk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="chW-SM-lFk">
                                 <rect key="frame" x="-83" y="77" width="588" height="754"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saving the planet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPK-By-3aM">
-                                <rect key="frame" x="133" y="557" width="156" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="zid-nB-qFv">
-                                <rect key="frame" x="55" y="248" width="305" height="226"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo(2)" translatesAutoresizingMaskIntoConstraints="NO" id="zid-nB-qFv">
+                                <rect key="frame" x="4" y="274" width="414" height="349"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -164,26 +157,45 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Dj-bh-zUE">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEO-av-gXR">
-                                                <rect key="frame" x="24" y="136" width="366" height="259"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">On average, we only wear garments 7 times before throwing them away.
-Fast fashion is the mass production of cheap, disposable clothing. It has become one of the most pressing obstacles towards a sustainable future. The fashion industry has led to overconsumption of water, microfiber pollution, waste, toxic chemicals, greenhouse gases, soil degradation, and rainforest destruction. 
-</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qY-zQ-mgY">
-                                                <rect key="frame" x="146" y="597" width="122" height="30"/>
+                                                <rect key="frame" x="167" y="935" width="80" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="How you can help"/>
+                                                <color key="backgroundColor" red="0.80392156859999997" green="0.71764705880000002" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="contentStretch" x="0.20000000000000001" y="0.40000000000000002" width="1" height="1"/>
+                                                <state key="normal" title="Take Action">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="NxN-OK-hNs" kind="show" id="S1q-Ch-ABb"/>
                                                 </connections>
                                             </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image from iOS" translatesAutoresizingMaskIntoConstraints="NO" id="T5E-6E-QzS">
+                                                <rect key="frame" x="58" y="428" width="305" height="193"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fastfashion" translatesAutoresizingMaskIntoConstraints="NO" id="ktN-Lg-8Mf">
+                                                <rect key="frame" x="58" y="671" width="305" height="161"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="E05-Hv-Ihk">
+                                                <rect key="frame" x="30" y="154" width="354" height="197"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Fast fashion is the mass production of cheap, disposable clothing. It has become one of the most pressing obstacles towards a sustainable future. The fashion industry has led to overconsumption of water, microfiber pollution, waste, toxic chemicals, greenhouse gases, soil degradation, and rainforest destruction. 
+</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="On average, we only wear garments 7 times before throwing them away." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AwZ-4d-G5K">
+                                                <rect key="frame" x="30" y="74" width="354" height="84"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.65882354970000001" green="0.7607843876" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.66666666666666663" green="0.76862745098039209" blue="0.41960784313725491" alpha="0.82142487582781454" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1200" id="VRI-g1-bCi"/>
                                         </constraints>
@@ -220,14 +232,14 @@ Fast fashion is the mass production of cheap, disposable clothing. It has become
             <objects>
                 <viewController id="NxN-OK-hNs" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z4u-y2-hZi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxz-qI-xbj">
-                                <rect key="frame" x="0.0" y="88" width="414" height="1212"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="1112"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNT-a1-gzJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How you can help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOO-kg-8aN">
                                                 <rect key="frame" x="52" y="118" width="310" height="36"/>
@@ -240,7 +252,7 @@ Fast fashion is the mass production of cheap, disposable clothing. It has become
                                                 <rect key="frame" x="24" y="226" width="366" height="429"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <mutableString key="text">Here’s some steps to reduce your impact through fashion!
-1. Buy less! 
+1. Buy less!                                             
 2. Buy clothes from sustainable and clean brands!
 3. Buy better quality clothing!
 4. Think twice before throwing away your clothes. Are you able to repair them or donate or recycle them instead?
@@ -255,9 +267,9 @@ Fast fashion is the mass production of cheap, disposable clothing. It has become
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.80392156862745101" green="0.71764705882352942" blue="0.96470588235294119" alpha="0.64504863410596025" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1300" id="dIL-QX-dxe"/>
+                                            <constraint firstAttribute="height" constant="1200" id="dIL-QX-dxe"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -280,11 +292,11 @@ Fast fashion is the mass production of cheap, disposable clothing. It has become
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="f22-5g-nVU"/>
-                    <size key="freeformSize" width="414" height="1300"/>
+                    <size key="freeformSize" width="414" height="1200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDQ-bq-1QL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2332" y="2147"/>
+            <point key="canvasLocation" x="-2335" y="2113"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="a2P-Vq-3qc">
@@ -308,7 +320,7 @@ Fast fashion is the mass production of cheap, disposable clothing. It has become
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fCC-mX-eVS">
-                                                <rect key="frame" x="35" y="191" width="344" height="767"/>
+                                                <rect key="frame" x="35" y="217" width="344" height="767"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <mutableString key="text">1. As a consumer, avoid buying too much food! - Make a shopping list beforehand to avoid buying unnecessary food.
 2. Think twice before throwing food away! - For example, leftover vegetables can be used to make soup. Slightly wilted vegetables can still be used, as they are mostly ripe. Remember, best before dates can be misleading, even the produce is still ripe and fresh. Use common sense!
@@ -324,7 +336,7 @@ Fast fashion is the mass production of cheap, disposable clothing. It has become
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1200" id="8od-DM-bdo"/>
                                         </constraints>
@@ -430,7 +442,7 @@ Fast fashion is the mass production of cheap, disposable clothing. It has become
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.792156862745098" green="0.94509803921568625" blue="1" alpha="0.79767694536423839" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1200" id="efw-xK-hPi"/>
                                         </constraints>
@@ -478,21 +490,40 @@ Fast fashion is the mass production of cheap, disposable clothing. It has become
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="adt-6C-fwP">
                                                 <rect key="frame" x="27" y="139" width="362" height="245"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Food waste is such a massive global problem. Globally, more than 30% of food is wasted, but in the U.S., more than 40% of food is wasted. Additionally, food waste is one of the biggest emitters of greenhouse gases, and studies have shown that as much as 11% of greenhouse gas emissions could be eliminated if food waste was decimated. Luckily, there are steps you can take to reduce food waste.</string>
+                                                <string key="text">Food waste is such a massive global problem. Additionally, food waste is one of the biggest emitters of greenhouse gases, and studies have shown that as much as 11% of greenhouse gas emissions could be eliminated if food waste was decimated. Luckily, there are steps you can take to reduce food waste.</string>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHZ-yz-f0u">
-                                                <rect key="frame" x="184" y="612" width="46" height="30"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FoodWaste(2)" translatesAutoresizingMaskIntoConstraints="NO" id="zQz-zD-qFF">
+                                                <rect key="frame" x="27" y="392" width="351" height="165"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FoodWaste" translatesAutoresizingMaskIntoConstraints="NO" id="tVv-FD-TR4">
+                                                <rect key="frame" x="66" y="588" width="278" height="174"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHZ-yz-f0u">
+                                                <rect key="frame" x="168" y="929" width="80" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Take Action">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="WWc-f6-vHS" kind="show" id="vTz-hX-KkM"/>
                                                 </connections>
                                             </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Globally, more than 30% of food is wasted, but in the U.S., more than 40% of food is wasted." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wwI-Ub-S9o">
+                                                <rect key="frame" x="27" y="60" width="362" height="84"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.66666666669999997" green="0.76862745099999996" blue="0.41960784309999999" alpha="0.82142487580000001" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1200" id="X2q-2f-h9F"/>
                                         </constraints>
@@ -537,25 +568,44 @@ Fast fashion is the mass production of cheap, disposable clothing. It has become
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lzZ-12-LSP">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ll2-ap-I3J">
-                                                <rect key="frame" x="183" y="647" width="46" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                                <connections>
-                                                    <segue destination="Dq7-Ig-FDR" kind="show" id="m0E-sa-H16"/>
-                                                </connections>
-                                            </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="o5Z-eR-I7s">
-                                                <rect key="frame" x="37" y="112" width="341" height="201"/>
+                                                <rect key="frame" x="37" y="160" width="341" height="178.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">According to the US Environmental Protection Agency, recycling “is the process of collecting and processing materials that would otherwise be thrown away as trash and turning them into new products.” Recycling can make a huge positive impact on the environment around you and help reduce waste that hurts ecosystems. 
+                                                <string key="text">According to the US Environmental Protection Agency, recycling “is the process of collecting and processing materials that would otherwise be thrown away as trash and turning them into new products.” This process helps reduce the amounts of waste that goes in the landfill.
 </string>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="recycle(2)" translatesAutoresizingMaskIntoConstraints="NO" id="Hwm-o3-lep">
+                                                <rect key="frame" x="55" y="366" width="304" height="189"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ll2-ap-I3J">
+                                                <rect key="frame" x="167" y="929" width="80" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.79215686269999996" green="0.94509803920000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Take Action">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Dq7-Ig-FDR" kind="show" id="m0E-sa-H16"/>
+                                                </connections>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Recycling can make a huge positive impact on the environment around you and help reduce waste that hurts ecosystems. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hsc-Pb-eCO">
+                                                <rect key="frame" x="26" y="52" width="362" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image from iOS (3)-1" translatesAutoresizingMaskIntoConstraints="NO" id="VTR-Pu-nQZ">
+                                                <rect key="frame" x="55" y="607" width="304" height="175"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.52941179279999995" green="0.62352943419999995" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.66666666669999997" green="0.76862745099999996" blue="0.41960784309999999" alpha="0.82142487580000001" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1200" id="9Cl-dT-CIr"/>
                                         </constraints>
@@ -597,29 +647,40 @@ Fast fashion is the mass production of cheap, disposable clothing. It has become
                     <view key="view" contentMode="scaleToFill" id="Qha-l3-6jK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Bir-Hh-TSa">
+                                <rect key="frame" x="-68" y="-34" width="551" height="965"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8uP-UK-V3k"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" red="0.66666668650000005" green="0.76862752440000004" blue="0.4196078479" alpha="0.8488979718543046" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Fourth Page" id="h8F-pO-4Y2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i9m-qZ-2NC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-271" y="1168"/>
+            <point key="canvasLocation" x="-271.01449275362319" y="1167.8571428571429"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Image 8-5-21 at 1.27 AM" width="244" height="334.5"/>
-        <image name="Logo-1" width="448" height="399"/>
+        <image name="FoodWaste" width="1920" height="1276"/>
+        <image name="FoodWaste(2)" width="1280" height="960"/>
+        <image name="Image from iOS" width="760" height="411"/>
+        <image name="Image from iOS (3)-1" width="1024" height="682"/>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="fastfashion" width="750" height="393"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="trash.fill" catalog="system" width="121" height="128"/>
+        <image name="leaf.fill" catalog="system" width="128" height="106"/>
+        <image name="logo" width="488" height="669"/>
+        <image name="logo(2)" width="471" height="508"/>
+        <image name="recycle(2)" width="1500" height="1000"/>
+        <image name="trash.slash.fill" catalog="system" width="115" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

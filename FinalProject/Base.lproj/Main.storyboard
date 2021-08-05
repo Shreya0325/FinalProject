@@ -33,7 +33,7 @@
         <scene sceneID="CIn-9o-81u">
             <objects>
                 <navigationController id="0OH-J3-SNn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Recycling" id="MjJ-dz-JzQ"/>
+                    <tabBarItem key="tabBarItem" title="Recycling" image="trash.fill" catalog="system" id="MjJ-dz-JzQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lKL-Wu-SWb">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -147,61 +147,448 @@
             </objects>
             <point key="canvasLocation" x="-2991.304347826087" y="1167.8571428571429"/>
         </scene>
-        <!--First page-->
+        <!--Fast Fashion-->
         <scene sceneID="yeR-XS-YBt">
             <objects>
                 <viewController id="aAu-0b-zHU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2vJ-D6-XpK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zs5-3J-APR">
                                 <rect key="frame" x="99" y="411" width="110" height="200"/>
                             </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mns-qU-S7S">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1112"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Dj-bh-zUE">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEO-av-gXR">
+                                                <rect key="frame" x="24" y="136" width="366" height="259"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">On average, we only wear garments 7 times before throwing them away.
+Fast fashion is the mass production of cheap, disposable clothing. It has become one of the most pressing obstacles towards a sustainable future. The fashion industry has led to overconsumption of water, microfiber pollution, waste, toxic chemicals, greenhouse gases, soil degradation, and rainforest destruction. 
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qY-zQ-mgY">
+                                                <rect key="frame" x="146" y="597" width="122" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="How you can help"/>
+                                                <connections>
+                                                    <segue destination="NxN-OK-hNs" kind="show" id="S1q-Ch-ABb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.65882354970000001" green="0.7607843876" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="VRI-g1-bCi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1Dj-bh-zUE" secondAttribute="trailing" id="D9F-iU-cwk"/>
+                                    <constraint firstItem="1Dj-bh-zUE" firstAttribute="leading" secondItem="Mns-qU-S7S" secondAttribute="leading" id="aqS-V1-9c5"/>
+                                    <constraint firstItem="1Dj-bh-zUE" firstAttribute="top" secondItem="Mns-qU-S7S" secondAttribute="top" id="hoh-Yh-c0J"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Dj-bh-zUE" secondAttribute="bottom" id="uh5-Ya-cBf"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JF2-Jn-T5y"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zs5-3J-APR" firstAttribute="width" secondItem="2vJ-D6-XpK" secondAttribute="width" multiplier="0.2657" id="1Fr-fg-G0D"/>
+                            <constraint firstItem="Mns-qU-S7S" firstAttribute="leading" secondItem="JF2-Jn-T5y" secondAttribute="leading" id="Bgo-aV-bV6"/>
+                            <constraint firstItem="Mns-qU-S7S" firstAttribute="top" secondItem="JF2-Jn-T5y" secondAttribute="top" id="H4A-ha-lpi"/>
+                            <constraint firstItem="1Dj-bh-zUE" firstAttribute="width" secondItem="2vJ-D6-XpK" secondAttribute="width" id="cD3-ve-C0k"/>
+                            <constraint firstItem="Mns-qU-S7S" firstAttribute="trailing" secondItem="JF2-Jn-T5y" secondAttribute="trailing" id="eHr-xo-kee"/>
+                            <constraint firstAttribute="bottom" secondItem="Mns-qU-S7S" secondAttribute="bottom" id="kL5-nZ-m46"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="First page" id="FzQ-cr-Bi1"/>
+                    <navigationItem key="navigationItem" title="Fast Fashion" id="FzQ-cr-Bi1"/>
+                    <size key="freeformSize" width="414" height="1200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Xn-aq-GkA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2333" y="1168"/>
+            <point key="canvasLocation" x="-2333.3333333333335" y="1241.5178571428571"/>
         </scene>
-        <!--Second Page-->
+        <!--View Controller-->
+        <scene sceneID="ojL-hs-Ogd">
+            <objects>
+                <viewController id="NxN-OK-hNs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z4u-y2-hZi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxz-qI-xbj">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1212"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNT-a1-gzJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How you can help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOO-kg-8aN">
+                                                <rect key="frame" x="52" y="118" width="310" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pds-VG-MwR">
+                                                <rect key="frame" x="24" y="226" width="366" height="429"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <mutableString key="text">Here’s some steps to reduce your impact through fashion!
+1. Buy less! 
+2. Buy clothes from sustainable and clean brands!
+3. Buy better quality clothing!
+4. Think twice before throwing away your clothes. Are you able to repair them or donate or recycle them instead?
+5. Buy second-hand or rent your clothes!
+6. Keep an eye on your washing! Do full loads, use green detergent, wear it more than once, and use cold water!
+7. Choose clothes made from natural dyes and fibers
+8. Buy clothes made from Lyocell/Tencell instead of rayon, modal, or viscose.
+9. Buy clothes made from linen instead of cotton as cotton production leads to a overconsumption of water
+</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1300" id="dIL-QX-dxe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CNT-a1-gzJ" firstAttribute="top" secondItem="dxz-qI-xbj" secondAttribute="top" id="7HN-Ev-3NB"/>
+                                    <constraint firstAttribute="trailing" secondItem="CNT-a1-gzJ" secondAttribute="trailing" id="V2G-JO-hf0"/>
+                                    <constraint firstAttribute="bottom" secondItem="CNT-a1-gzJ" secondAttribute="bottom" id="kne-nX-1Gv"/>
+                                    <constraint firstItem="CNT-a1-gzJ" firstAttribute="leading" secondItem="dxz-qI-xbj" secondAttribute="leading" id="yL3-wQ-4ct"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jnS-JR-NS6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dxz-qI-xbj" firstAttribute="trailing" secondItem="jnS-JR-NS6" secondAttribute="trailing" id="8aG-Ag-I2y"/>
+                            <constraint firstItem="CNT-a1-gzJ" firstAttribute="width" secondItem="Z4u-y2-hZi" secondAttribute="width" id="EK0-Fr-HC4"/>
+                            <constraint firstItem="dxz-qI-xbj" firstAttribute="leading" secondItem="jnS-JR-NS6" secondAttribute="leading" id="PBi-Mi-Ycb"/>
+                            <constraint firstItem="dxz-qI-xbj" firstAttribute="top" secondItem="jnS-JR-NS6" secondAttribute="top" id="QPJ-E2-Cgh"/>
+                            <constraint firstAttribute="bottom" secondItem="dxz-qI-xbj" secondAttribute="bottom" id="Zml-aj-lgi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="f22-5g-nVU"/>
+                    <size key="freeformSize" width="414" height="1300"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDQ-bq-1QL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2332" y="2147"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="a2P-Vq-3qc">
+            <objects>
+                <viewController id="WWc-f6-vHS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eDW-8s-qVj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUt-vq-ADL">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1112"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXC-hC-xq2">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How you can help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDY-27-sZt">
+                                                <rect key="frame" x="52" y="125" width="310" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fCC-mX-eVS">
+                                                <rect key="frame" x="35" y="191" width="344" height="767"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <mutableString key="text">1. As a consumer, avoid buying too much food! - Make a shopping list beforehand to avoid buying unnecessary food.
+2. Think twice before throwing food away! - For example, leftover vegetables can be used to make soup. Slightly wilted vegetables can still be used, as they are mostly ripe. Remember, best before dates can be misleading, even the produce is still ripe and fresh. Use common sense!
+3. Store food correctly! - Perishable food items require certain methods of storage, so make sure to properly do that research.
+4. Freeze extra foods! - The shelf life of many fruits and vegetables extends if you freeze them. Furthermore, freezing extras will reduce the need to buy them when they are out of season.
+5. Eat leftovers - Every week, allot a couple of days to eat leftovers.
+6. Understand the dates - According to FDA, an estimated 20% of food waste comes from confusion over “sell-by” and “use-by” dates. These are not the same as expiration dates! Remember, the best way to tell if food is spoiled is by using your senses.
+7. Compost scraps! - Creating a compost heap will create nutrient-rich fertilizer, which is beneficial for gardens. Even for those without space to have a compost pile, many municipalities have compositing programs.
+8. Bring your own lunch! - Avoid waste bringing what you know you will eat, while also saving money!
+</mutableString>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="8od-DM-bdo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="DXC-hC-xq2" secondAttribute="bottom" id="0dl-0I-Fef"/>
+                                    <constraint firstItem="DXC-hC-xq2" firstAttribute="leading" secondItem="XUt-vq-ADL" secondAttribute="leading" id="Fo2-b2-qUu"/>
+                                    <constraint firstAttribute="trailing" secondItem="DXC-hC-xq2" secondAttribute="trailing" id="ire-vt-6a0"/>
+                                    <constraint firstItem="DXC-hC-xq2" firstAttribute="top" secondItem="XUt-vq-ADL" secondAttribute="top" id="usn-5S-Tu3"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cCO-KU-nys"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XUt-vq-ADL" firstAttribute="leading" secondItem="cCO-KU-nys" secondAttribute="leading" id="1ZG-Jc-ki3"/>
+                            <constraint firstItem="DXC-hC-xq2" firstAttribute="width" secondItem="eDW-8s-qVj" secondAttribute="width" id="6oQ-la-Dh9"/>
+                            <constraint firstAttribute="bottom" secondItem="XUt-vq-ADL" secondAttribute="bottom" id="BUN-Nd-tOW"/>
+                            <constraint firstItem="XUt-vq-ADL" firstAttribute="trailing" secondItem="cCO-KU-nys" secondAttribute="trailing" id="DOU-kc-zMx"/>
+                            <constraint firstItem="XUt-vq-ADL" firstAttribute="top" secondItem="cCO-KU-nys" secondAttribute="top" id="ncG-sx-rFH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CAU-RL-4A2"/>
+                    <size key="freeformSize" width="414" height="1200"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Fo-RT-VA6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1684" y="2113"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Du7-MH-1Vb">
+            <objects>
+                <viewController id="Dq7-Ig-FDR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HHe-dn-Nk0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ybz-gv-mih">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1112"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDc-SV-1CI">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BOu-DL-zFc">
+                                                <rect key="frame" x="66" y="177" width="283" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">- plastic bottles &amp; containers
+- food/beverage item cans
+- paper
+- glass bottles/containers
+- cardboard
+</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What items can you recycle?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vw9-xx-bB6">
+                                                <rect key="frame" x="66" y="108" width="283" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What items can't you recycle?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1a-cJ-1Db">
+                                                <rect key="frame" x="53" y="364" width="296" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2LL-AA-wiZ">
+                                                <rect key="frame" x="66" y="426" width="283" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">- plastic wrap
+- plastic bags
+- bagged recyclables
+- styrofoam
+</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here are some tips you can follow!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bzi-YT-V0a">
+                                                <rect key="frame" x="31" y="569" width="353" height="63"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hQl-n9-glF">
+                                                <rect key="frame" x="41" y="640" width="332" height="244"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">1. Don’t recycle super small items
+       - Rule of Thumb: Avoid recycling anything smaller than a card or the size of your palm. 
+2. Don’t bag your recyclable items
+       - This can contaminate an entire truckload of recycling
+3. Be sure to check if your item is recyclable or not
+4. Make sure to keep your recycle bin dry and uncontaminated 
+</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="efw-xK-hPi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="pDc-SV-1CI" secondAttribute="bottom" id="1d6-Ds-Znf"/>
+                                    <constraint firstItem="pDc-SV-1CI" firstAttribute="top" secondItem="Ybz-gv-mih" secondAttribute="top" id="1kb-oc-LWe"/>
+                                    <constraint firstItem="pDc-SV-1CI" firstAttribute="leading" secondItem="Ybz-gv-mih" secondAttribute="leading" id="BDZ-6j-2q6"/>
+                                    <constraint firstAttribute="trailing" secondItem="pDc-SV-1CI" secondAttribute="trailing" id="Osq-3b-Ci7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4H2-uO-52u"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ybz-gv-mih" firstAttribute="trailing" secondItem="4H2-uO-52u" secondAttribute="trailing" id="3vx-q6-3kY"/>
+                            <constraint firstAttribute="bottom" secondItem="Ybz-gv-mih" secondAttribute="bottom" id="VR6-Fg-g9k"/>
+                            <constraint firstItem="pDc-SV-1CI" firstAttribute="width" secondItem="HHe-dn-Nk0" secondAttribute="width" id="fKs-9U-ylQ"/>
+                            <constraint firstItem="Ybz-gv-mih" firstAttribute="leading" secondItem="4H2-uO-52u" secondAttribute="leading" id="lbk-0t-0EP"/>
+                            <constraint firstItem="Ybz-gv-mih" firstAttribute="top" secondItem="4H2-uO-52u" secondAttribute="top" id="oiQ-En-E4l"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="r2T-Ec-dbm"/>
+                    <size key="freeformSize" width="414" height="1200"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LoS-GH-Q7q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-991" y="2113"/>
+        </scene>
+        <!--Food Waste-->
         <scene sceneID="1e4-rI-Hvw">
             <objects>
                 <viewController id="qXE-Cd-3Yf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bZN-bm-dj2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mta-Jz-C3P">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1112"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNd-hf-1il">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="adt-6C-fwP">
+                                                <rect key="frame" x="27" y="139" width="362" height="245"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Food waste is such a massive global problem. Globally, more than 30% of food is wasted, but in the U.S., more than 40% of food is wasted. Additionally, food waste is one of the biggest emitters of greenhouse gases, and studies have shown that as much as 11% of greenhouse gas emissions could be eliminated if food waste was decimated. Luckily, there are steps you can take to reduce food waste.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHZ-yz-f0u">
+                                                <rect key="frame" x="184" y="612" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <segue destination="WWc-f6-vHS" kind="show" id="vTz-hX-KkM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="X2q-2f-h9F"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZNd-hf-1il" firstAttribute="top" secondItem="mta-Jz-C3P" secondAttribute="top" id="KCf-MP-ayI"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZNd-hf-1il" secondAttribute="bottom" id="PEj-MT-eBL"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZNd-hf-1il" secondAttribute="trailing" id="nwy-ns-MQu"/>
+                                    <constraint firstItem="ZNd-hf-1il" firstAttribute="leading" secondItem="mta-Jz-C3P" secondAttribute="leading" id="yra-8N-yov"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RD1-bN-89v"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mta-Jz-C3P" firstAttribute="trailing" secondItem="RD1-bN-89v" secondAttribute="trailing" id="YiR-er-rot"/>
+                            <constraint firstAttribute="bottom" secondItem="mta-Jz-C3P" secondAttribute="bottom" id="mCI-rs-PPZ"/>
+                            <constraint firstItem="ZNd-hf-1il" firstAttribute="width" secondItem="bZN-bm-dj2" secondAttribute="width" id="nCY-xJ-ZZa"/>
+                            <constraint firstItem="mta-Jz-C3P" firstAttribute="top" secondItem="RD1-bN-89v" secondAttribute="top" id="pZi-2F-2rP"/>
+                            <constraint firstItem="mta-Jz-C3P" firstAttribute="leading" secondItem="RD1-bN-89v" secondAttribute="leading" id="xc9-t1-ER5"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Second Page" id="UId-I3-hcU"/>
+                    <navigationItem key="navigationItem" title="Food Waste" id="UId-I3-hcU"/>
+                    <size key="freeformSize" width="414" height="1200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lF-Rn-81O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1659" y="1168"/>
+            <point key="canvasLocation" x="-1659.4202898550725" y="1241.5178571428571"/>
         </scene>
-        <!--Third Page-->
+        <!--Recycling-->
         <scene sceneID="Js4-VQ-q6E">
             <objects>
                 <viewController id="jMx-ry-G5Q" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GhS-je-qzC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcO-WU-tbI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1112"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lzZ-12-LSP">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ll2-ap-I3J">
+                                                <rect key="frame" x="183" y="647" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <segue destination="Dq7-Ig-FDR" kind="show" id="m0E-sa-H16"/>
+                                                </connections>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="o5Z-eR-I7s">
+                                                <rect key="frame" x="37" y="112" width="341" height="201"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">According to the US Environmental Protection Agency, recycling “is the process of collecting and processing materials that would otherwise be thrown away as trash and turning them into new products.” Recycling can make a huge positive impact on the environment around you and help reduce waste that hurts ecosystems. 
+</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.52941179279999995" green="0.62352943419999995" blue="0.31764706970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="9Cl-dT-CIr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lzZ-12-LSP" firstAttribute="leading" secondItem="dcO-WU-tbI" secondAttribute="leading" id="0yt-b2-Na9"/>
+                                    <constraint firstItem="lzZ-12-LSP" firstAttribute="top" secondItem="dcO-WU-tbI" secondAttribute="top" id="9HS-HY-OhN"/>
+                                    <constraint firstAttribute="trailing" secondItem="lzZ-12-LSP" secondAttribute="trailing" id="9zz-mz-VWU"/>
+                                    <constraint firstAttribute="bottom" secondItem="lzZ-12-LSP" secondAttribute="bottom" id="HFu-ZK-dhN"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aoU-HJ-9eN"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dcO-WU-tbI" secondAttribute="bottom" id="IyP-Ja-VEH"/>
+                            <constraint firstItem="dcO-WU-tbI" firstAttribute="leading" secondItem="aoU-HJ-9eN" secondAttribute="leading" id="JPe-R8-CDl"/>
+                            <constraint firstItem="dcO-WU-tbI" firstAttribute="top" secondItem="aoU-HJ-9eN" secondAttribute="top" id="NJd-Zv-OpW"/>
+                            <constraint firstAttribute="bottom" secondItem="dcO-WU-tbI" secondAttribute="bottom" id="NZm-Ou-NLe"/>
+                            <constraint firstItem="lzZ-12-LSP" firstAttribute="width" secondItem="GhS-je-qzC" secondAttribute="width" id="QTB-z3-FW5"/>
+                            <constraint firstItem="dcO-WU-tbI" firstAttribute="trailing" secondItem="aoU-HJ-9eN" secondAttribute="trailing" id="bAa-aU-ota"/>
+                            <constraint firstItem="dcO-WU-tbI" firstAttribute="top" secondItem="aoU-HJ-9eN" secondAttribute="top" id="gHi-Qg-onP"/>
+                            <constraint firstItem="dcO-WU-tbI" firstAttribute="trailing" secondItem="aoU-HJ-9eN" secondAttribute="trailing" id="gXD-KA-jRp"/>
+                            <constraint firstItem="dcO-WU-tbI" firstAttribute="leading" secondItem="aoU-HJ-9eN" secondAttribute="leading" id="s9v-1T-pL7"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Third Page" id="Ggc-E9-B9G"/>
+                    <navigationItem key="navigationItem" title="Recycling" id="Ggc-E9-B9G"/>
+                    <size key="freeformSize" width="414" height="1200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OfX-uA-j4W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-991" y="1168"/>
+            <point key="canvasLocation" x="-978.26086956521749" y="1241.5178571428571"/>
         </scene>
         <!--Fourth Page-->
         <scene sceneID="UCC-9j-xBD">
@@ -224,11 +611,12 @@
         <image name="Image 8-5-21 at 1.27 AM" width="244" height="334.5"/>
         <image name="Logo-1" width="448" height="399"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="trash.fill" catalog="system" width="121" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

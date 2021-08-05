@@ -46,11 +46,11 @@
             </objects>
             <point key="canvasLocation" x="-990" y="494"/>
         </scene>
-        <!--Blog-->
+        <!--About us-->
         <scene sceneID="FmZ-oe-0IM">
             <objects>
                 <navigationController id="fim-bv-TdE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Blog" id="LFR-ja-UoC"/>
+                    <tabBarItem key="tabBarItem" title="About us" image="rectangle.and.pencil.and.ellipsis" catalog="system" id="LFR-ja-UoC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XPI-QK-xB2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -241,31 +241,88 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNT-a1-gzJ">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How you can help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOO-kg-8aN">
-                                                <rect key="frame" x="52" y="118" width="310" height="36"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here’s some ways to reduce your impact through fashion!" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pds-VG-MwR">
+                                                <rect key="frame" x="36" y="146" width="355" height="54"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pds-VG-MwR">
-                                                <rect key="frame" x="24" y="226" width="366" height="429"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1. Buy less!                                             " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-Mf-qW6">
+                                                <rect key="frame" x="36" y="231" width="341" height="38"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">Here’s some steps to reduce your impact through fashion!
-1. Buy less!                                             
-2. Buy clothes from sustainable and clean brands!
-3. Buy better quality clothing!
-4. Think twice before throwing away your clothes. Are you able to repair them or donate or recycle them instead?
-5. Buy second-hand or rent your clothes!
-6. Keep an eye on your washing! Do full loads, use green detergent, wear it more than once, and use cold water!
-7. Choose clothes made from natural dyes and fibers
-8. Buy clothes made from Lyocell/Tencell instead of rayon, modal, or viscose.
-9. Buy clothes made from linen instead of cotton as cotton production leads to a overconsumption of water
-</mutableString>
+                                                <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Md9-px-2ZS">
+                                                <rect key="frame" x="36" y="272" width="341" height="59"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">2. Buy clothes from sustainable and clean brands!
+                                             </string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="3. Buy better quality clothing!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hJd-6t-opS">
+                                                <rect key="frame" x="36" y="328" width="341" height="42"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zqd-ss-dvK">
+                                                <rect key="frame" x="36" y="441" width="341" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">5. Buy second-hand, thrift or rent your clothes!
+</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WZC-1P-VyU">
+                                                <rect key="frame" x="36" y="586" width="341" height="54"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">7. Choose clothes made from natural dyes and fibers
+</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="8. Buy clothes made from Lyocell/Tencell instead of rayon, modal, or viscose." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8V9-eE-t8M">
+                                                <rect key="frame" x="36" y="648" width="341" height="61"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mw8-CY-iLP">
+                                                <rect key="frame" x="36" y="504" width="341" height="74"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">6. Keep an eye on your washing! Do full loads, use green detergent, wear it more than once, and use cold water!
+</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2V2-Qn-Nbr">
+                                                <rect key="frame" x="36" y="366" width="341" height="74"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">4. Think twice before throwing away your clothes. Are you able to repair them or donate or recycle them instead?
+</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dgz-0n-Qjr">
+                                                <rect key="frame" x="36" y="710" width="341" height="97.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">9. Buy clothes made from linen instead of cotton as cotton production leads to a overconsumption of water
+</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.80392156862745101" green="0.71764705882352942" blue="0.96470588235294119" alpha="0.64504863410596025" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -296,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDQ-bq-1QL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2335" y="2113"/>
+            <point key="canvasLocation" x="-2336.231884057971" y="2112.7232142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="a2P-Vq-3qc">
@@ -674,6 +731,7 @@
         <image name="leaf.fill" catalog="system" width="128" height="106"/>
         <image name="logo" width="488" height="669"/>
         <image name="logo(2)" width="471" height="508"/>
+        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="81"/>
         <image name="recycle(2)" width="1500" height="1000"/>
         <image name="trash.slash.fill" catalog="system" width="115" height="128"/>
         <systemColor name="labelColor">
